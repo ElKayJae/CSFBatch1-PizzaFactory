@@ -1,0 +1,9 @@
+<h1>Orders for {{email}}</h1>
+<div *ngFor="let o of orderList">
+    <h3>
+        Order Id : {{o.orderid}}
+
+    </h3>
+    <h4> $ {{o.price | number: '1.2-2'}}</h4>
+</div>
+<button type="button" [routerLink]="['/']">Back</button>
